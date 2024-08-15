@@ -1,0 +1,58 @@
+#############-----Defining a Class-----#############
+
+A class is like a blueprint for creating objects. It defines a set of attributes and methods that the objects created from the class can use.
+
+class Car:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+
+def ----> it is function or method
+__init__ ----> it is constructor
+
+#############-----Creating an Object (Instance)-----#############
+
+An object is an instance of a class. You can create multiple objects from the same class, each with different attribute values.
+my_car = Car("Toyota", "Corolla")
+print(my_car.brand)
+print(my_car.model)
+
+
+#############-----Class method and self-----#############
+
+problem - Add a method to the Car class that displays the full name of the car (barnd and model)
+
+
+
+#############-----Inheritance-----#############
+
+problem - create an ElectricCar Class that inherits from the Car class and has an additional attribute battery_size.
+
+
+Inheritance is a fundamental concept in object-oriented programming (OOP) 
+that allows a new class (the child or subclass) to inherit attributes 
+and methods from an existing class (the parent or superclass).
+In Python, inheritance enables you to create hierarchical class structures,
+promoting code reusability and organization.
+
+
+
+How Inheritance Works
+
+In Python, inheritance is implemented by defining a subclass that derives from a superclass.
+The subclass inherits all the attributes and methods of the superclass, and 
+it can also have its own additional attributes and methods or override existing ones.
+
+
+
+#############-----Encapsulation-----#############
+
+problem - Modify the Car class to Encapsulate the brand attribute, making it private, and provide a 
+getter method for it
+
+
+
+#############-----Polymorphism-----#############
+
+problem - Demonstrate Polymorphism by defining a method fuel_type in both Car and ElectricCar classes, but with different behaviours.
